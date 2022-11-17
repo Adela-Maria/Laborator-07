@@ -1,0 +1,28 @@
+body
+{
+    background-image: url(imagineinceput.jpg );
+    text-align:left;
+    align-items:center;
+    height: 80%;
+    width: 25%;
+    margin-top:7%;
+
+
+}
+
+
+h1 {
+    background-color: aqua;
+
+
+}
+p{ 
+    background-color: brown;
+}
+a{
+     background-color: rgb(199, 166, 230);
+}
+button {
+    background-color: bisque;
+
+}
