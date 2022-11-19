@@ -7,7 +7,7 @@ function changeProfile()
 	changeBodyBackgroundColor();
 }
 
-function NameToJob() {
+function NameToJob() {  //aceasta functie are rolul de a schimba  header-ul cu numele in job-ul din viitor
 	document.getElementById("NumePrenume").innerHTML ="Inginer Software - KAWASAKI";
 }
 
@@ -37,7 +37,7 @@ function educationToAchievements() {
 	l3.innerHTML = "https://osut.ro/info-studenti/oportunitati/oportunitati-de-voluntariat";
 }
 
-function oldToNewImage() {
+function oldToNewImage() { //functia schimba vechea imagine cu cea noua
 	var img = document.getElementById("imagine");
 	img.src = "imagine2.jpeg";
 	img.style.opacity = 0.95;
@@ -50,7 +50,7 @@ function oldToNewImage() {
 	
 }
 
-function changeBodyBackgroundColor() {
+function changeBodyBackgroundColor() { //modifica culoarea de fundal a mai multor elemente din pagina
 	var body = document.getElementById("body");
 	body.style.backgroundColor  = "#e8a5dd";
 	body.style.fontFamily="FrakturBold";
@@ -62,7 +62,7 @@ function AddNewItem() {
 	createEmailTextBox();
 }
 
-function addBirthDate() {
+function addBirthDate() { //functia creeaza o casuta in care se afiseaza data nasterii si varsta
 	var tag = document.createElement("h3");
 	tag.id = "date-years";
 	var text = document.createTextNode("12-09-2003");
@@ -73,7 +73,7 @@ function addBirthDate() {
 	document.getElementById("birthdate").addEventListener("mouseout", handleMouseOut);
 }
 
-function birthToYears() {
+function birthToYears() {  //calculeaza varsta 
 	var currentTime = new Date();
 	var vv = document.getElementById("date-years");
 	var year = currentTime.getFullYear()
@@ -81,11 +81,11 @@ function birthToYears() {
 	vv.innerHTML = "Varsta: " + numYears;
 }
 
-function handleMouseOut() {
+function handleMouseOut() { //functia afiseaza varsta cand utilizatorul pozitioneaza mouse-ul peste casuta
 		document.getElementById("date-years").innerHTML = '12-09-2003';
 	}
 
-function createEmailTextBox() {
+function createEmailTextBox() {   //creaza o caseta text in care se afla data nasterii si varsta
 	var input = document.createElement("input");
 	input.type = "email";
 	input.id = "email-box";
@@ -95,7 +95,7 @@ function createEmailTextBox() {
 	document.getElementById("birthdate").appendChild(input);
 }
 
-function validateEmail() {
+function validateEmail() {  //aceasta functie inspecteaza daca email-ul introdus este valid
 	var input = document.getElementById("email-box");
   	var validRegex = /^\S+@\S+\.\S+$/;
   	if (input.value.match(validRegex)) {
